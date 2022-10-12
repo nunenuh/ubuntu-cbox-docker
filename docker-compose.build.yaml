@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  'jammy':
+    build: ./docker-images/ubuntu-jammy
+    image: nunenuh/ubuntu-cbox:jammy
+  'focal':
+    build: ./docker-images/ubuntu-focal
+    image: nunenuh/ubuntu-cbox:focal
+  'bionic':
+    build: ./docker-images/ubuntu-bionic
+    image: nunenuh/ubuntu-cbox:bionic
+ 
