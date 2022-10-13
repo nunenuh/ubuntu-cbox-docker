@@ -15,7 +15,7 @@ RUN useradd -m -s /bin/bash cbox && \
     echo 'cbox ALL=(ALL) NOPASSWD:ALL' >>/etc/sudoers
 
 
-RUN snap install cmake --classic
+# RUN snap install cmake --classic
 
 RUN wget https://github.com/nats-io/natscli/releases/download/v0.0.34/nats-0.0.34-amd64.deb -O  /home/cbox/nats-0.0.34-amd64.deb
 
