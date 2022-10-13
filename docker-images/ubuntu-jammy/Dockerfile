@@ -4,10 +4,10 @@ RUN apt-get update && \
     apt-get install build-essential libssl-dev wget nano curl file git ruby-full locales --no-install-recommends -y
 
 RUN apt-get update && \
-    apt-get install snapd nmap net-tools -y
+    apt-get install nmap net-tools --no-install-recommends -y
 
 RUN apt-get update && \
-    apt-get install golang-go -y
+    apt-get install golang-go --no-install-recommends -y
 
 RUN localedef -i en_US -f UTF-8 en_US.UTF-8
 
