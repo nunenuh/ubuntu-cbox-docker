@@ -23,6 +23,9 @@ RUN chmod 777 /home/cbox/nats-0.0.34-amd64.deb
 
 RUN dpkg -i /home/cbox/nats-0.0.34-amd64.deb
 
+RUN rm -rf /var/lib/apt/lists/*
+
+CMD ["/bin/bash"]
 
 # USER cbox
 # RUN wget https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh -O /home/cbox/install.sh
