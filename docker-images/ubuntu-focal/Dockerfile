@@ -4,7 +4,7 @@ RUN apt-get update && \
     apt-get install build-essential libssl-dev wget nano curl file git ruby-full locales --no-install-recommends -y
 
 RUN apt-get update && \
-    apt-get install nmap net-tools --no-install-recommends -y
+    apt-get install nmap net-tools iputils-ping dnsutils --no-install-recommends -y
 
 RUN apt-get update && \
     apt-get install golang-go --no-install-recommends -y
